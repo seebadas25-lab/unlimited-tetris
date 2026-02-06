@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Tetris</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Game Area -->
+        <div class="game-wrapper">
+            <div class="glass-panel game-info-left">
+                <div class="info-box">
+                    <h3>HOLD</h3>
+                    <canvas id="hold-canvas" width="80" height="80"></canvas>
+                </div>
+                <div class="info-box">
+                    <h3>LEVEL</h3>
+                    <div id="level-display">1</div>
+                </div>
+            </div>
+
+            <div class="game-board-container">
+                <canvas id="game-canvas" width="240" height="400"></canvas>
+                <div id="game-overlay">
+                    <h2 id="overlay-title">TETRIS</h2>
+                    <p id="overlay-subtitle">Ready?</p>
+                    <button id="start-btn" class="glow-btn">START GAME</button>
+                </div>
+            </div>
+
+            <div class="glass-panel game-info-right">
+                <div class="info-box">
+                    <h3>NEXT</h3>
+                    <canvas id="next-canvas" width="80" height="80"></canvas>
+                </div>
+                <div class="info-box">
+                    <h3>SCORE</h3>
+                    <div id="score-display">0</div>
+                </div>
+                <div class="info-box">
+                    <h3>LINES</h3>
+                    <div id="lines-display">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AdSense Area -->
+        <div class="adsense-wrapper">
+            <div class="adsense-label">Advertisement</div>
+            <div class="adsense-container">
+                <!-- AdSense Placeholder for Localhost -->
+                <div class="ad-placeholder">
+                    <span>Google AdSense Area</span>
+                    <small>160x600 Skyscraper or Responsive</small>
+                </div>
+
+                <!-- Actual AdSense Code (Commented out for safety/localhost) -->
+                <!-- 
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_AD_CLIENT_ID"
+                    crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-YOUR_AD_CLIENT_ID"
+                    data-ad-slot="YOUR_AD_SLOT_ID"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script> 
+                -->
+            </div>
+        </div>
+    </div>
+
+    <script src="tetrominoes.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
